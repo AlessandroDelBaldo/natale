@@ -1,7 +1,7 @@
 import random, os
 deposito = 1000
 premio = 0
-simboli = ["cuore", "cuore", "cuore", "cuore", "ciliegia", "ciliegia", "ciliegia", "banana", " banana", "casali"]
+simboli = ["🍒","💸","🍇","💥"]
 play = input("Play? (S/N)")
 while play == "S" or play == "s":
     while True:
@@ -19,19 +19,19 @@ while play == "S" or play == "s":
             slot[i] = simbolo
         print(slot)
         if slot[0] == slot[1] and slot[1] == slot[2]:
-            if slot[0] == "cuore":
-                premio = puntata*3
-                deposito += puntata
-                print(f"Che fortuna! Hai vinto {premio}€!!\ncredito: {deposito} \t puntata: {puntata}")
-            elif slot[0] == "ciliegia":
+            if slot[0] == "🍒":
                 premio = puntata*4
                 deposito += puntata
                 print(f"Che fortuna! Hai vinto {premio}€!!\ncredito: {deposito} \t puntata: {puntata}")
-            elif slot[0] == "banana":
+            elif slot[0] == "💸":
                 premio = puntata*5
                 deposito += puntata
                 print(f"Che fortuna! Hai vinto {premio}€!!\ncredito: {deposito} \t puntata: {puntata}")
-            elif slot[0] == "casali":
+            elif slot[0] == "🍇":
+                premio = puntata*10
+                deposito += puntata
+                print(f"Che fortuna! Hai vinto {premio}€!!\ncredito: {deposito} \t puntata: {puntata}")
+            elif slot[0] == "💥":
                 premio = puntata*20
                 deposito += puntata
                 print(f"Sbancato cazzo {premio}€!!\ncredito: {deposito} \t puntata: {puntata}")
