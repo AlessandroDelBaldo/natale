@@ -42,5 +42,6 @@ while play == "S" or play == "s":
         if replay == "S" or replay == "s":
             continue
         else:
+            print("Grazie per aver giocato!")
             break
     break
