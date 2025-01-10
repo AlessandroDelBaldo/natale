@@ -250,7 +250,7 @@ def campo(player1, player2, comanda, mazzo, mode):
     if mode == 1:
         print(f"{player1.nome}: {player1.mano.carte}\t{player2.nome}: {player2.mano.carte}\n Comanda: {comanda}\t Carte rimanenti: {len(mazzo.carte)}")
     elif mode == 2:
-        print(f"{player1.nome}: {player1.mano.carte}\t{player2.nome}: {player2.mano.carte}\n Comanda: {comanda}\t Carte rimanenti: {len(mazzo.carte)}")
+        print(f"{player1.nome}: {player1.mano.carte}\t{player2.nome}: 🎴🎴🎴\n Comanda: {comanda}\t Carte rimanenti: {len(mazzo.carte)}")
 
 def choice():
     while True:
